@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Network Tracker</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        .status { padding: 15px; margin-bottom: 20px; border-radius: 5px; font-weight: bold; }
+        .online { background-color: #d4edda; color: #155724; }
+        .offline { background-color: #f8d7da; color: #721c24; }
+        button { padding: 15px 30px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Трекер Мережі (PWA)</h1>
+    
+    <div id="status" class="status online">Перевірка...</div>
+    
+    <button id="saveBtn">Відправити дані (Sync Test)</button>
+    
+    <p id="log"></p>
+
+    <script src="BrowserAPI.js"></script>
+</body>
+</html>
